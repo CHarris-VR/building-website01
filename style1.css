@@ -1,0 +1,81 @@
+/* This is the CSS file for the bat website. It will be used to style the HTML pages. */
+/* This will be my first design starting with changing the background color and font. */
+body {
+    background-color: #363636;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Nav links at the top will be in a rounded box with a background color and some padding. */
+nav {
+    background-color: #9bff48;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;      /* puts links in a row */
+    gap: 10px;          /* space between each link */
+}
+/* Nav links will be white and have some spacing between them. */
+nav a {
+    background-color: #333;  /* panel color */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: bold;
+    color: rgb(154, 154, 255);
+}
+/* The main heading will be centered and have a larger font size. */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+}
+
+/* Center the button */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    background-color: #333;
+}
+
+/* Panel styling */
+.panel {
+    display: none;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgb(154, 160, 172);
+    color: white;
+    position: relative;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Close button (X) */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
