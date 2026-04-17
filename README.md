@@ -1,1 +1,12 @@
-# building-website01
+# The Bat Project
+
+
+## Disclaimer! 
+<p>I do not claim ownership of any images or things used in this page. Nothing here is being done
+for money or profit. This is simply a project that I am doing for fun and free time and do not 
+intend to make any money on this project simply just wanting to make a website for the fun of learning.</p>
+
+<p>I have limited knowledge of building html however I plan to learn to further my knowledge in the
+tech industry and hopefully create some fun websites later in life. Thank you for being part of this
+journey!</p>
+
