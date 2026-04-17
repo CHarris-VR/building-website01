@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Bat Factory!</title>
+    <!-- Linking to the css style sheet.-->
+    <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 
 <body>
 
     <h1>The Bat Page</h1>
     <nav>
-        <a href="index.html">main</a>
+        <a href="main.html">main</a>
         <a href="about.html">about</a>
     </nav>
     
     <img src="https://www.marylandzoo.org/wp-content/uploads/2017/10/bat_web.jpg">
     <p>This is a website I am making about bats! I will start to work on this as of 4/16/2026</p>
+    
+    <!-- Button Container-->
+     <div class="btn-container">
+        <button onclick="document.getElementById('panel').style.display='block'">
+            Show Panel
+        </button>
+     </div>
+
+     <!-- Hidden Panel -->
+     <div id="panel" class="panel">
+        <span onclick="this.parentElement.style.display='none'" class="close-btn">X</span>
+        <p>Bat facts coming soon!</p>
+     </div>
 
 
 </body>
