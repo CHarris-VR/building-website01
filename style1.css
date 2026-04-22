@@ -1,23 +1,55 @@
-/* This is the CSS file for the bat website. It will be used to style the HTML pages. */
-/* This will be my first design starting with changing the background color and font. */
+/* Page reset */
 body {
-    background-color: #363636;
+    margin: 0;
     font-family: Arial, sans-serif;
     color: white;
+    background-color: #111;
 }
 
-/* Nav links at the top will be in a rounded box with a background color and some padding. */
+/* Parallax hero section */
+.hero {
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+/* Nav styling */
 nav {
     background-color: #ffffff27;
     padding: 10px;
     border-radius: 5px;
-
-    display: flex;      /* puts links in a row */
-    gap: 10px;          /* space between each link */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    width: fit-content;
 }
-/* Nav links will be white and have some spacing between them. */
+
 nav a {
-    background-color: #333;  /* panel color */
+    background-color: #333;
     color: white;
     padding: 8px 16px;
     border-radius: 5px;
@@ -25,17 +57,41 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: bold;
     color: rgb(154, 154, 255);
 }
-/* The main heading will be centered and have a larger font size. */
+
+/* Headings */
 h1 {
     text-align: center;
     font-size: 3em;
     color: #ffffff;
+    margin-bottom: 20px;
 }
 
-/* Center the button */
+h2 {
+    text-align: center;
+}
+
+/* Main content area */
+.content {
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 40px 20px;
+}
+
+/* Image */
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-container img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Button */
 .btn-container {
     display: flex;
     justify-content: center;
@@ -58,7 +114,7 @@ h1 {
     background-color: #333;
 }
 
-/* Panel styling */
+/* Panel */
 .panel {
     display: none;
     max-width: 400px;
@@ -71,7 +127,6 @@ h1 {
     text-align: center;
 }
 
-/* Close button (X) */
 .close-btn {
     position: absolute;
     top: 5px;
@@ -80,35 +135,11 @@ h1 {
     font-weight: bold;
 }
 
-/* Image container to center the image */
-.img-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}  
-.img-container img {
-    max-width: 25%;
-    height: auto;
-    border-radius: 8px;
-    border: 2px rgba(255, 255, 255, 0.116);
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-
-    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470"); /* forest image */
-    background-size: cover;        /* fills screen */
-    background-position: center;   /* centers image */
-    background-repeat: no-repeat;
-
-    background-attachment: fixed;  /* 👈 creates slow scroll effect */
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* dark overlay */
-    z-index: -1;
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
 }
