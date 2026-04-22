@@ -13,7 +13,7 @@ journey!</p>
 ## Updates!
 
 ### 4/22/26
-<p>Decided to learn about html parallaxing. In learning, I used AI to help build the foundational understanding and be given food for thought on designs that looks interesting while also using [w3schools](https://www.w3schools.com/howto/tryhow_css_parallax_demo.html)
+<p>Decided to learn about html parallaxing. In learning, I used AI to help build the foundational understanding and be given food for thought on designs that looks interesting while also using [w3schools](https://www.w3schools.com/howto/howto_css_parallax.asp)
 I was able to make some additional changes to paralaxing</p>
 <p>Also downloaded TabOut from the VSCode market Place to tab out of area within the closed brackets so far. (has made life in coding sigificantly easier.)</p>
 
