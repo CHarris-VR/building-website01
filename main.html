@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Bat Factory!</title>
-    <!-- Linking to the css style sheet.-->
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 
 <body>
+    <!-- This is the main page for the website. 
+     It will have some information about bats 
+     and some cool pictures of bats. -->    
+    <header class="hero">
+        <div class="hero-content">
+            <h1>The Bat Page</h1>
+            <nav>
+                <a href="main.html">main</a>
+                <a href="about.html">about</a>
+            </nav>
+            <p>This is a website I am making about bats! 
+            I will start to work on this as of 4/16/2026</p>
+            <p>As of 4/22/2026, I have made Progress on Parallaxing.</p>
 
-    <h1>The Bat Page</h1>
-    <nav>
-        <a href="main.html">main</a>
-        <a href="about.html">about</a>
-    </nav>
+        </div>
+    </header>
 
-    <div class="img-container">
-        <img src="https://www.marylandzoo.org/wp-content/uploads/2017/10/bat_web.jpg">
-    </div>
-    
-    <p>This is a website I am making about bats! 
-        I will start to work on this as of 4/16/2026</p>
-    
-    <!-- Button Container-->
-    <div class="btn-container">
-        <button onclick="document.getElementById('panel').style.display='block'">
-            Show Panel
-        </button>
-    </div>
+    <main class="content">
+        <div class="img-container">
+            <img src="https://www.marylandzoo.org/wp-content/uploads/2017/10/bat_web.jpg" alt="Bat">
+        </div>
 
-    <!-- Hidden Panel -->
-    <div id="panel" class="panel">
-        <span onclick="this.parentElement.style.display='none'" class="close-btn">X</span>
-        <p>Bat facts coming soon!</p>
-    </div>
-    <section>
-        <h2>Bat Info Section</h2>
-        <p>Scrolling test content...</p>
-    </section>
+        <div class="btn-container">
+            <button onclick="document.getElementById('panel').style.display='block'">
+                Show Panel
+            </button>
+        </div>
 
-    <section>
-        <h2>More Bat Facts</h2>
-        <p>More scrolling content...</p>
-    </section>
+        <div id="panel" class="panel">
+            <span onclick="this.parentElement.style.display='none'" class="close-btn">X</span>
+            <p>Bat facts coming soon!</p>
+        </div>
 
+        <!-- Section for bat information -->
+        <section>
+            <h2>Bat Info Section</h2>
+            <p>Scrolling test content...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <!-- Section for additional bat information -->
+        <section>
+            <h2>More Bat Facts</h2>
+            <p>More scrolling content...</p>
+            <p>Bats are very important for ecosystems because they help with pollination and insect control.</p>
+            <p>Some bats eat fruit, some eat nectar, and many eat insects.</p>
+            <p>They use echolocation to help navigate in the dark.</p>
+        </section>
+
+        <!-- Section for even more content to test scrolling -->
+        <section>
+            <h2>Even More Content</h2>
+            <p>This extra content helps you scroll so the parallax effect is easier to see.</p>
+            <p>Keep adding text here to test the page.</p>
+            <p>Keep adding text here to test the page.</p>
+            <p>Keep adding text here to test the page.</p>
+        </section>
+    </main>
 
 </body>
 </html>
