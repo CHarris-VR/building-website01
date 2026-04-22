@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,19 +26,21 @@
         </div>
     </header>
 
-    <main class="content">
+    <!-- Parallax section with a bat image and using bat as a div now -->
+    <bat class="bat2-parallax">       
         <!-- Image container for the bat picture -->
         <div class="img-container">
             <img src="https://blog.nature.org/wp-content/uploads/2023/02/tnc_91514836_preview-edited.jpg?resize=800,450" 
             alt="Bat from https://blog.nature.org/2019/10/14/meet-the-worlds-10-coolest-bats/">
         </div>
-        
+
         <!-- Button to show the panel -->
         <div class="btn-container">
             <button onclick="document.getElementById('panel').style.display='block'">
                 Show Panel
             </button>
         </div>
+    </bat> 
 
         <div id="panel" class="panel">
             <span onclick="this.parentElement.style.display='none'" class="close-btn">X</span>
