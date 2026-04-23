@@ -39,9 +39,11 @@ bat {
 
 /* Parallax section with a bat image */
 .bat2-parallax {
+    /* Parallaxing with a border  */
+    height: 40vh;
     background-image: url(https://blog.nature.org/wp-content/uploads/2023/02/tnc_91514836_preview-edited.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -52,6 +54,11 @@ bat {
     text-align: right;
     padding: 10px;
     position: relative;
+
+    border: 10px solid black;
+    border-radius : 10px;
+    overflow: hidden;
+
 }
 
 /* Content inside the hero section */
