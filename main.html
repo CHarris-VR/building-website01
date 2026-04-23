@@ -78,5 +78,24 @@
         </section>
     </main>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const parallax = document.querySelector(".bat2-parallax");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                parallax.classList.add("in-view");
+            } else {
+                parallax.classList.remove("in-view");
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    observer.observe(parallax);
+});
+</script>
 </body>
 </html>
