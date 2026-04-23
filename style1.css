@@ -1,15 +1,15 @@
-/* Style for the website */
+/* Ensure all elements use border-box for easier sizing */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Basic reset for body and default font */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
     background-color: #111;
-}
-
-/* Making a custom div for bat parallax */
-bat {
-    display: block;
-
 }
 
 /* Hero section with parallax background */
@@ -37,37 +37,68 @@ bat {
     background: rgba(0, 0, 0, 0.45);
 }
 
-/* Parallax section with a bat image */
+/* Bat section */
+bat {
+    display: block;
+}
+
+/* Frame around the parallax section */
+.bat2-frame {
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 4px solid black;
+    transition: border-color 0.8s ease, box-shadow 0.8s ease;
+}
+
+/* In-view effect for the frame */
+.bat2-frame.in-view {
+    border-color: rgb(154, 154, 255);
+    box-shadow: 0 0 25px rgba(154, 154, 255, 0.6);
+}
+
+/* Parallax section */
 .bat2-parallax {
-    /* Parallaxing with a border  */
-    height: 40vh;
-    background-image: url(https://blog.nature.org/wp-content/uploads/2023/02/tnc_91514836_preview-edited.jpg);
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background layer for the parallax effect */
+/* This layer will create the parallax effect by using a 
+fixed background image. */
+.bat2-parallax::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://blog.nature.org/wp-content/uploads/2023/02/tnc_91514836_preview-edited.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-    /* Content to be added for the bat image */
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    text-align: right;
-    padding: 10px;
-    position: relative;
-
-    border: 10px solid black;
-    border-radius : 10px;
-    overflow: hidden;
-    /* Testing out transitions */
-    transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
-
+    z-index: 0;
 }
 
-/* Adding on in-view effects to transform the parallax section */
-.bat2-parallax.in-view {
-    border-color: rgb(154, 154, 255);
-    box-shadow: 0 0 25px rgba(154, 154, 255, 0.6);
-    transform: scale(1.02);
+/* Zoom layer for the in-view effect */
+/* This layer will scale up when the parallax section is in view, 
+creating a zoom effect on the background image. */
+.bat2-zoom-layer {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.8s ease;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bat2-frame.in-view .bat2-zoom-layer {
+    transform: scale(1.03);
 }
 
 /* Content inside the hero section */
@@ -124,12 +155,19 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img-comtainer p {
+    overflow-wrap: break-word;
 }
 
 .img-container img {
     max-width: 25%;
     height: auto;
     border-radius: 8px;
+
 }
 
 /* Button */
