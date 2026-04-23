@@ -88,24 +88,26 @@
     </main>
 
     <!-- Added a parallax effect to zoom in on the bat for in-view -->
+    <!-- This is the JavaScript for the in-view effect. It uses the 
+     Intersection Observer API to detect when the parallax section is 
+     in view and adds a class to trigger the zoom effect. -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const parallax = document.querySelector(".bat2-parallax");
+    const frame = document.querySelector(".bat2-frame");
 
-    <!-- Using Intersection Observer API to add in-view effects to the parallax section -->
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                parallax.classList.add("in-view");
+                frame.classList.add("in-view");
             } else {
-                parallax.classList.remove("in-view");
+                frame.classList.remove("in-view");
             }
         });
     }, {
         threshold: 0.8
     });
 
-    observer.observe(parallax);
+    observer.observe(frame);
 });
 </script>
 </body>
