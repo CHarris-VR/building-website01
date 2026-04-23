@@ -49,8 +49,8 @@ bat {
 
     /* Content to be added for the bat image */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: right;
+    justify-content: right;
     text-align: right;
     padding: 10px;
     position: relative;
