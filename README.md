@@ -14,6 +14,7 @@ journey!</p>
 
 ### 4/23/26
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref3.jpg?raw=true" width="100%" />
+<p>I have made significant progress with learning parallaxing and how it operates in the coding envrionemnts that I've been working on. After some work and you can see with the image displayed, I now have a cool border around the bat that parallaxes (The thing you can't see if the zoom in of the text as it happens) Will probably make animated exmaples later.</p>
 
 ### 4/22/26
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref2.jpg?raw=true" width="100%" />
