@@ -32,6 +32,14 @@
         <div class="img-container">
             <img src="https://blog.nature.org/wp-content/uploads/2023/02/tnc_91514836_preview-edited.jpg?resize=800,450" 
             alt="Bat from https://blog.nature.org/2019/10/14/meet-the-worlds-10-coolest-bats/">
+            <h2>Bat Info Section</h2>
+            <p>Scrolling test content...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
         <!-- Button to show the panel -->
@@ -78,10 +86,12 @@
         </section>
     </main>
 
+    <!-- Added a parallax effect to zoom in on the bat for in-view -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const parallax = document.querySelector(".bat2-parallax");
 
+    <!-- Using Intersection Observer API to add in-view effects to the parallax section -->
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
