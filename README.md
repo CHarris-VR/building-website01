@@ -12,6 +12,9 @@ journey!</p>
 
 ## Updates!
 
+### 4/23/26
+<img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref3.jpg?raw=true" width="100%" />
+
 ### 4/22/26
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref2.jpg?raw=true" width="100%" />
 <p>Decided to learn about html parallaxing. In learning, I used AI to help build the foundational understanding and be given food for thought on designs that looks interesting while also using [w3schools](https://www.w3schools.com/howto/howto_css_parallax.asp)
