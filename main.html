@@ -58,23 +58,28 @@
 
         <!-- Section for bat information -->
         <section>
-            <h2>Bat Info Section</h2>
-            <p>Scrolling test content...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="section-zoom">
+                    <h2>Bat Info Section</h2>
+                    <p>Scrolling test content...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
         </section>
 
         <!-- Section for additional bat information -->
         <section>
-            <h2>More Bat Facts</h2>
-            <p>More scrolling content...</p>
-            <p>Bats are very important for ecosystems because they help with pollination and insect control.</p>
-            <p>Some bats eat fruit, some eat nectar, and many eat insects.</p>
-            <p>They use echolocation to help navigate in the dark.</p>
+            <div class="section-zoom">
+                <h2>More Bat Facts</h2>
+                <p>More scrolling content...</p>
+                <p>Bats are very important for ecosystems because they help with pollination and insect control.</p>
+                <p>Some bats eat fruit, some eat nectar, and many eat insects.</p>
+                <p>They use echolocation to help navigate in the dark.</p>
+            </div>
+            
         </section>
 
         <!-- Section for even more content to test scrolling -->
@@ -93,21 +98,21 @@
      in view and adds a class to trigger the zoom effect. -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const frame = document.querySelector(".bat2-frame");
+    const elements = document.querySelectorAll(".bat2-frame, .section-zoom");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                frame.classList.add("in-view");
+                entry.target.classList.add("in-view");
             } else {
-                frame.classList.remove("in-view");
+                entry.target.classList.remove("in-view");
             }
         });
     }, {
-        threshold: 0.8
+        threshold: 0.6
     });
 
-    observer.observe(frame);
+    elements.forEach(el => observer.observe(el));
 });
 </script>
 </body>

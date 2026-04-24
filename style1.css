@@ -92,7 +92,6 @@ creating a zoom effect on the background image. */
     justify-content: center;
     padding: 20px;
     transition: transform 0.8s ease;
-
     width: 100%;
     box-sizing: border-box;
 }
@@ -106,6 +105,24 @@ creating a zoom effect on the background image. */
     position: relative;
     z-index: 1;
     max-width: 800px;
+}
+
+/* Section zomm effect */
+.section-zoom {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.8s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-zoom.in-view {
+    transform: scale(1.03);
 }
 
 /* Nav styling */
