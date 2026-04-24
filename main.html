@@ -1,5 +1,11 @@
-
-
+<!-- This is the main page for the website. -->
+<!-- Designed by Curtis -->
+<!-- TODO: 
+    - Change Content to be actual bat facts!
+    - Add more style coloring
+    - Change the main picture to be bat related instead of ocean related.
+    
+    Will add More to list as I come up with things.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +15,12 @@
 </head>
 
 <body>
+
     <!-- This is the main page for the website. 
      It will have some information about bats 
      and some cool pictures of bats. --> 
     <header class="hero">
-        <div class="hero-content">
+        <bat  class="hero-content">
             <h1>The Bat Page</h1>
             <nav>
                 <a href="main.html">main</a>
@@ -22,17 +29,17 @@
             <p>This is a website I am making about bats! 
             I will start to work on this as of 4/16/2026</p>
             <p>As of 4/22/2026, I have made Progress on Parallaxing.</p>
-
-        </div>
+            <p>As of 4/24/2026 I have added section zooms to make things look nice.</p>
+        </bat>
     </header>
 
-<!-- After learning originally how to do parallaxing, 
- I am now trying to add in-view effects to the parallax section. 
- Was able to implement basic in-view effects too! -->
-    <div class="bat2-frame">
+    <!-- After learning originally how to do parallaxing, 
+     I am now trying to add in-view effects to the parallax section. 
+     Was able to implement basic in-view effects too! -->
+    <bat class="bat2-frame">
         <bat class="bat2-parallax">
-            <div class="bat2-zoom-layer">
-                <div class="img-container">
+            <bat class="bat2-zoom-layer">
+                <bat  class="img-container">
                     <p>Scrolling test content...</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -40,25 +47,25 @@
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+                </bat>
 
-                <div class="btn-container">
+                <bat  class="btn-container">
                     <button onclick="document.getElementById('panel').style.display='block'">
                         Show Panel
                     </button>
-                </div>
-            </div>
+                </bat>
+            </bat>
         </bat>
-    </div>
+    </bat>
 
-        <div id="panel" class="panel">
+        <bat  id="panel" class="panel">
             <span onclick="this.parentElement.style.display='none'" class="close-btn">X</span>
             <p>Bat facts coming soon!</p>
-        </div>
+        </bat>
 
         <!-- Section for bat information -->
         <section>
-                <div class="section-zoom">
+                <bat  class="section-zoom">
                     <h2>Bat Info Section</h2>
                     <p>Scrolling test content...</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -67,30 +74,30 @@
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+                </bat>
         </section>
 
         <!-- Section for additional bat information -->
         <section>
-            <div class="section-zoom">
+            <bat  class="section-zoom">
                 <h2>More Bat Facts</h2>
                 <p>More scrolling content...</p>
                 <p>Bats are very important for ecosystems because they help with pollination and insect control.</p>
                 <p>Some bats eat fruit, some eat nectar, and many eat insects.</p>
                 <p>They use echolocation to help navigate in the dark.</p>
-            </div>
+            </bat>
             
         </section>
 
         <!-- Section for even more content to test scrolling -->
         <section>
-            <div class="section-zoom">
+            <bat  class="section-zoom">
                 <h2>Even More Content</h2>
                 <p>This extra content helps you scroll so the parallax effect is easier to see.</p>
                 <p>Keep adding text here to test the page.</p>
                 <p>Keep adding text here to test the page.</p>
                 <p>Keep adding text here to test the page.</p>
-            </div>
+            </bat>
         </section>
     </main>
 
@@ -117,5 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach(el => observer.observe(el));
 });
 </script>
+
 </body>
 </html>
