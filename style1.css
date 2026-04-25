@@ -1,8 +1,9 @@
+/* === BASICS === */
+/* #region */
 /* Ensure all elements use border-box for easier sizing */
 * {
     box-sizing: border-box;
 }
-
 
 /* Basic reset for body and default font */
 body {
@@ -11,6 +12,9 @@ body {
     color: white;
     background-color: #111;
 }
+
+/* #endregion */
+
 
 /* Hero section with parallax background */
 .hero {
@@ -125,7 +129,9 @@ creating a zoom effect on the background image. */
     transform: scale(1.03);
 }
 
-/* Nav styling */
+/* === NAV STYLING === */
+/* #region */
+
 nav {
     background-color: #ffffff27;
     padding: 10px;
@@ -149,7 +155,11 @@ nav a:hover {
     color: rgb(154, 154, 255);
 }
 
-/* Headings */
+/* #endregion */
+
+
+/* ===HEADINGS & CONTENT STYLING === */
+/* #region */
 h1 {
     text-align: center;
     font-size: 3em;
@@ -166,6 +176,9 @@ h2 {
     background-color: rgba(20, 20, 20, 0.95);
     padding: 40px 20px;
 }
+
+/* #endregion */    
+
 
 /* Image */
 .img-container {
