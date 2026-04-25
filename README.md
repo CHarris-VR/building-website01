@@ -12,6 +12,7 @@ journey!</p>
 
 ## Updates!
 
+---
 ### 4/25/26
 
 #### Learning with /* #region / #endregion
@@ -21,6 +22,7 @@ journey!</p>
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref5.jpg?raw=true" width="100%" />
 <p>Within the pictures above, I have learned that you can use #region / #endregion in comments to be able to make sections easier to digest in your CSS sheet for organization and additional changes to affect the style for additional pages to look nice.</p>
 <p>I wanted to be able to create something that's going to be nice to look at but scaleable for latter additions and coding to make a much more interactive website for viewership.</p>
+---
 
 ### 4/23/26
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref3.jpg?raw=true" width="100%" />
