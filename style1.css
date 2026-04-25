@@ -1,5 +1,5 @@
 /* === BASICS === */
-/* #region */
+
 /* Ensure all elements use border-box for easier sizing */
 * {
     box-sizing: border-box;
@@ -14,9 +14,11 @@ body {
 }
 
 /* #endregion */
+/* ================================================================= */
 
 
-/* Hero section with parallax background */
+/* === HERO SECTION === */
+
 .hero {
     min-height: 100vh;
     background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
@@ -40,6 +42,12 @@ body {
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
 }
+/* ================================================================= */
+/* #endregion */
+/* ================================================================= */
+
+
+/*  === PARALLAX (bat) SECTION === */
 
 /* Bat section */
 bat {
@@ -103,35 +111,12 @@ creating a zoom effect on the background image. */
 .bat2-frame.in-view .bat2-zoom-layer {
     transform: scale(1.03);
 }
+/* ================================================================= */
+/* #endregion */
+/* ================================================================= */
 
-/* Content inside the hero section */
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-}
 
-/* Section zomm effect */
-.section-zoom {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    transition: transform 0.8s ease;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.section-zoom.in-view {
-    transform: scale(1.03);
-}
-
-/* === NAV STYLING === */
-/* #region */
-
+/*  === NAV STYLING === */
 nav {
     background-color: #ffffff27;
     padding: 10px;
@@ -154,12 +139,12 @@ nav a {
 nav a:hover {
     color: rgb(154, 154, 255);
 }
-
+/* ================================================================= */
 /* #endregion */
+/* ================================================================= */
 
 
-/* ===HEADINGS & CONTENT STYLING === */
-/* #region */
+/*  === HEADINGS & CONTENT STYLING ===  */
 h1 {
     text-align: center;
     font-size: 3em;
@@ -176,9 +161,6 @@ h2 {
     background-color: rgba(20, 20, 20, 0.95);
     padding: 40px 20px;
 }
-
-/* #endregion */    
-
 
 /* Image */
 .img-container {
@@ -199,8 +181,12 @@ h2 {
     border-radius: 8px;
 
 }
+/* ================================================================= */
+/* #endregion */  
+/* ================================================================= */
 
-/* Button */
+
+/*  === BUTTONS & PANELS ===  */
 .btn-container {
     display: flex;
     justify-content: center;
@@ -223,6 +209,14 @@ h2 {
     background-color: #333;
 }
 
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Panel */
 .panel {
     display: none;
@@ -235,16 +229,13 @@ h2 {
     border-radius: 8px;
     text-align: center;
 }
+/* ================================================================= */
+/* #endregion */
+/* ================================================================= */
 
-.close-btn {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
-/* Sections */
+/* === SECTIONS === */
+
 section {
     max-width: 900px;
     margin: 50px auto;
@@ -252,3 +243,26 @@ section {
     background-color: rgba(255, 255, 255, 0.06);
     border-radius: 10px;
 }
+
+/* Section zoom effect */
+.section-zoom {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.8s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* When the section is in view, scale it up slightly */
+.section-zoom.in-view {
+    transform: scale(1.05);
+}
+
+/* ================================================================= */
+/* #endregion */
+/* ================================================================= */
