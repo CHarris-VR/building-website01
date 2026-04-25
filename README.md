@@ -11,9 +11,9 @@ tech industry and hopefully create some fun websites later in life. Thank you fo
 journey!</p>
 
 ## Updates!
+<p> I will be posting my updates in decending order from most recent updates to least recent! </p>
 
----
-### 4/25/26
+## 4/25/26
 
 #### Learning with /* #region / #endregion
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref4.jpg?raw=true" width="100%" />
@@ -22,6 +22,7 @@ journey!</p>
 <img src= "https://github.com/CHarris-VR/building-website01/blob/main/refpics/ref5.jpg?raw=true" width="100%" />
 <p>Within the pictures above, I have learned that you can use #region / #endregion in comments to be able to make sections easier to digest in your CSS sheet for organization and additional changes to affect the style for additional pages to look nice.</p>
 <p>I wanted to be able to create something that's going to be nice to look at but scaleable for latter additions and coding to make a much more interactive website for viewership.</p>
+
 ---
 
 ### 4/23/26
@@ -35,7 +36,7 @@ I was able to make some additional changes to paralaxing</p>
 <p>Also downloaded TabOut from the VSCode market Place to tab out of area within the closed brackets so far. (has made life in coding sigificantly easier.)</p>
 <p>Learned about the difference between using "<!-- HTML -->" comments and "/* css */" Comments for better understanding of work flows.</p>
 
-
+---
 
 ### 4/17/26
 
